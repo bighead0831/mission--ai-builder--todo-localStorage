@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Turbopack has issues with '#' in directory paths; use Webpack instead
+  turbopack: undefined,
 };
 
 export default nextConfig;
