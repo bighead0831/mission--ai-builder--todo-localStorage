@@ -24,11 +24,11 @@ export default function Home() {
   });
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4">
+    <main className="min-h-screen bg-[#FAF7F2] py-12 px-4">
       <div className="max-w-md mx-auto space-y-4">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">할일 리스트</h1>
-          <p className="text-sm text-gray-500 mt-1">로컬 스토리지에 자동 저장됩니다</p>
+        <div className="text-center pb-2">
+          <h1 className="text-3xl font-bold text-[#1C1917] tracking-tight">할일 리스트</h1>
+          <p className="text-sm text-[#A8A29E] mt-1">로컬 스토리지에 자동 저장됩니다</p>
         </div>
 
         <TodoInput onAdd={addTodo} />
@@ -36,9 +36,9 @@ export default function Home() {
         <FilterTabs current={filter} onChange={setFilter} counts={counts} />
 
         {!initialized ? (
-          <p className="text-center text-gray-400 py-8">불러오는 중...</p>
+          <p className="text-center text-[#A8A29E] py-8">불러오는 중...</p>
         ) : filtered.length === 0 ? (
-          <p className="text-center text-gray-400 py-8">
+          <p className="text-center text-[#A8A29E] py-8">
             {filter === "completed" ? "완료된 항목이 없습니다" : "할일을 추가해보세요!"}
           </p>
         ) : (
@@ -55,10 +55,10 @@ export default function Home() {
         )}
 
         {counts.completed > 0 && (
-          <div className="text-right">
+          <div className="text-right pt-1">
             <button
               onClick={clearCompleted}
-              className="text-sm text-gray-400 hover:text-red-500 transition-colors"
+              className="text-sm text-[#A8A29E] hover:text-red-400 transition-colors"
             >
               완료된 항목 모두 삭제 ({counts.completed})
             </button>
