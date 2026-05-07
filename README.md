@@ -1,5 +1,11 @@
 # 할일 리스트 (Todo List)
 
+> 배포 URL: https://mission-ai-builder-todo-local-stora.vercel.app/
+
+할일을 추가하고, 완료 여부를 체크하고, 필터로 분류할 수 있는 심플한 할일 관리 웹앱입니다.  
+모든 데이터는 브라우저의 localStorage에 저장되므로 서버나 데이터베이스 없이 동작하며, 새로고침 후에도 데이터가 유지됩니다.  
+GitHub `main` 브랜치에 push하면 Vercel을 통해 자동으로 배포됩니다.
+
 Next.js + localStorage 기반 할일 관리 웹앱
 
 ## 기술 스택
